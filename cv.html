@@ -32,85 +32,117 @@
         ul li {
             margin-bottom: 10px;
         }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.5); /* Light translucent background for nav */
+            padding: 3px 0; /* Reduced padding for top and bottom */
+            max-width: 1000px; /* Set a maximum width for the navigation */
+            margin: 0 auto; /* Center the navigation */
+        }
+        nav a {
+            color: black; /* Change text color to black */
+            padding: 10px 15px; /* Reduced padding for links */
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light translucent hover effect */
+        }
     </style>
 </head>
 <body>
 
+<header>
+    <img src="media/banner.png" alt="Site Banner" class="banner">
     <h1>Madison S. Brown</h1>
     <div class="contact-info">
         <p>Vancouver, BC</p>
-        <p>Email: madib98@@student.ubc.ca | Phone: +1 604-908-2223</p>
+        <p>Email: madib98@student.ubc.ca | Phone: +1 604-908-2223</p>
     </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="cv.html">CV</a>
+        <a href="projects.html">Projects</a>
+        <a href="misc.html">Misc.</a>
+    </nav>
+</header>
 
-    <div class="container education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>University of British Columbia, Vancouver BC</strong><br>
-                MSc. Forestry – "Characterizing and assessing the impact of Non-Stand Replacing Disturbances within a real-time context" (May 2023 - Present)<br>
-                Supervisor: Dr. Nicholas Coops
-            </li>
-            <li>
-                <strong>University of British Columbia, Vancouver BC</strong><br>
-                BSc. Plant and Soil Sciences, Minor in Geological Sciences with Honours (Sept 2017 - Dec 2021)
-            </li>
-        </ul>
-    </div>
+<div class="container education">
+    <h2>Education</h2>
+    <ul>
+        <li>
+            <strong>University of British Columbia, Vancouver BC</strong><br>
+            MSc. Forestry – "Characterizing and assessing the impact of Non-Stand Replacing Disturbances within a real-time context" (May 2023 - Present)<br>
+            Supervisor: Dr. Nicholas Coops
+        </li>
+        <li>
+            <strong>University of British Columbia, Vancouver BC</strong><br>
+            BSc. Plant and Soil Sciences, Minor in Geological Sciences with Honours (Sept 2017 - Dec 2021)
+        </li>
+    </ul>
+</div>
 
-    <div class="container experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Graduate Research Assistant – UBC Forestry, Vancouver BC (May 2023 – Present)</strong><br>
-                Research on Non-Stand Replacing Disturbances using Landsat/HLS imagery and predicting LiDAR derived structural metrics.
-            </li>
-            <li><strong>Teaching Assistant - UBC Forestry (Sept 2023 – Jan 2024)</strong><br>
-                Guided field trips, graded assignments, and delivered lectures on Remote Sensing for Conservation.
-            </li>
-            <li><strong>Geospatial and Geological Consultant – Self-employed (March 2022 – June 2023)</strong><br>
-                Provided GIS services and report writing for clients.
-            </li>
-            <li><strong>Junior Geologist/ GIS Manager – Anomalous Exploration (March 2022 – Nov 2022)</strong><br>
-                Managed GIS projects and field data for Surge Copper’s Ootsa Berg project.
-            </li>
-            <li><strong>Research Assistant - Climate and Cryosphere Lab (May 2021 - Dec 2021)</strong><br>
-                Conducted analyses on glacier retreat in BC and Alaska using R and Python.
-            </li>
-        </ul>
-    </div>
+<div class="container experience">
+    <h2>Experience</h2>
+    <ul>
+        <li><strong>Graduate Research Assistant – UBC Forestry, Vancouver BC (May 2023 – Present)</strong><br>
+            Research on Non-Stand Replacing Disturbances using Landsat/HLS imagery and predicting LiDAR derived structural metrics.
+        </li>
+        <li><strong>Teaching Assistant - UBC Forestry (Sept 2023 – Jan 2024)</strong><br>
+            Guided field trips, graded assignments, and delivered lectures on Remote Sensing for Conservation.
+        </li>
+        <li><strong>Geospatial and Geological Consultant – Self-employed (March 2022 – June 2023)</strong><br>
+            Provided GIS services and report writing for clients.
+        </li>
+        <li><strong>Junior Geologist/ GIS Manager – Anomalous Exploration (March 2022 – Nov 2022)</strong><br>
+            Managed GIS projects and field data for Surge Copper’s Ootsa Berg project.
+        </li>
+        <li><strong>Research Assistant - Climate and Cryosphere Lab (May 2021 - Dec 2021)</strong><br>
+            Conducted analyses on glacier retreat in BC and Alaska using R and Python.
+        </li>
+    </ul>
+</div>
 
-    <div class="container skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>R, Python, Excel, QGIS, Qfield, ArcGIS Pro, HTML</li>
-            <li>Fieldwork, Geological Mapping, Cartography</li>
-            <li>Science Communication, Literature Review</li>
-        </ul>
-    </div>
+<div class="container skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>R, Python, Excel, QGIS, Qfield, ArcGIS Pro, HTML</li>
+        <li>Fieldwork, Geological Mapping, Cartography</li>
+        <li>Science Communication, Literature Review</li>
+    </ul>
+</div>
 
-    <div class="container certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Geoscientist-in-Training (GIT), Engineer and Geoscientist BC (Aug 2022)</li>
-            <li>Occupational First Aid Level 1 (April 2022)</li>
-        </ul>
-    </div>
+<div class="container certifications">
+    <h2>Certifications</h2>
+    <ul>
+        <li>Geoscientist-in-Training (GIT), Engineer and Geoscientist BC (Aug 2022)</li>
+        <li>Occupational First Aid Level 1 (April 2022)</li>
+    </ul>
+</div>
 
-    <div class="container awards">
-        <h2>Awards</h2>
-        <ul>
-            <li>International Tuition Award (Summer 2023 - Winter 2024)</li>
-            <li>Work Learn International Undergraduate Research Award (2020)</li>
-        </ul>
-    </div>
+<div class="container awards">
+    <h2>Awards</h2>
+    <ul>
+        <li>International Tuition Award (Summer 2023 - Winter 2024)</li>
+        <li>Work Learn International Undergraduate Research Award (2020)</li>
+    </ul>
+</div>
 
-    <div class="container volunteer">
-        <h2>Volunteer Experience</h2>
-        <ul>
-            <li><strong>Travel and Safety Officer – UBC Competitive Nordic Ski Team (March 2018 - April 2020)</strong></li>
-            <li><strong>UBC Zero Waste Intern Squad (Sept 2018 – April 2019)</strong></li>
-        </ul>
-    </div>
+<div class="container volunteer">
+    <h2>Volunteer Experience</h2>
+    <ul>
+        <li><strong>Travel and Safety Officer – UBC Competitive Nordic Ski Team (March 2018 - April 2020)</strong></li>
+        <li><strong>UBC Zero Waste Intern Squad (Sept 2018 – April 2019)</strong></li>
+    </ul>
+</div>
 
 </body>
 </html>
+
 
