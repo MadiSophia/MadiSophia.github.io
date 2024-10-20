@@ -42,15 +42,6 @@
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.2); /* Light translucent hover effect */
         }
-        /* Container styling for the About section */
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 30px;
-            background-color: white; /* White background for the container */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px; /* Slightly rounded corners */
-        }
         h1, h2 {
             color: #333;
             text-align: center;
@@ -60,6 +51,7 @@
             display: flex;
             align-items: flex-start;
             gap: 20px; /* Space between photo and text */
+            padding: 30px;
         }
         .photo {
             max-width: 200px;
@@ -108,26 +100,18 @@
 </header>
 
 <!-- About Section with Profile Photo to the Left -->
-<div class="container">
-    <section id="about">
-        <div class="about-container">
-            <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's Profile Photo" class="photo">
-            <div class="about-content">
-                <h2>About</h2>
-                <p>
-                    Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.
-            
-                </p>
-            </div>
-        </div>
-    </section>
-</div>
-
-</body>
-</html>
-
-
-</div>
+<section id="about" class="about-container">
+    <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's Profile Photo" class="photo">
+    <div class="about-content">
+        <h2>About</h2>
+        <p>
+            Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.
+            <br><br>
+            I specialize in geographic data analysis, mapping, and spatial modeling. 
+            Passionate about using geospatial technology to solve environmental challenges.
+        </p>
+    </div>
+</section>
 
 </body>
 </html>
