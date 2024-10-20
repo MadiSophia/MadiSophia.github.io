@@ -9,11 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e3d8ed; /* Updated background color */
+            background-image: url('media/more_mountains.png'); /* Set background image */
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
             line-height: 1.6;
         }
         header {
-            position: relative;
             text-align: center;
             color: #fff;
         }
@@ -23,14 +25,10 @@
             object-fit: cover; /* Maintain aspect ratio and cover the area */
         }
         nav {
-            position: absolute;
-            top: 0;
-            width: 100%;
             display: flex;
             justify-content: center;
             background-color: rgba(202, 182, 186, 0.507); /* Translucent background */
             padding: 10px 0;
-            z-index: 1;
         }
         nav a {
             color: white;
@@ -52,6 +50,8 @@
             align-items: flex-start;
             gap: 20px; /* Space between photo and text */
             padding: 30px;
+            background-color: rgba(195, 214, 255, 0.8); /* Light translucent background */
+            border-radius: 10px; /* Rounded corners */
         }
         .photo {
             max-width: 200px;
@@ -65,11 +65,16 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #c3ced2;
+            background-color: #C3D6FF; /* Set footer background to #C3D6FF */
             color: #666;
-            position: fixed;
+            position: relative; /* Change from fixed to relative */
             width: 100%;
             bottom: 0;
+        }
+        footer img {
+            width: 100%; /* Make the footer image responsive */
+            height: auto;
+            margin-top: 10px; /* Space between footer text and image */
         }
         #skills, #contact {
             margin: 40px 0;
@@ -90,13 +95,13 @@
 <body>
 
 <header>
+    <img src="media/banner.png" alt="Site Banner" class="banner">
     <nav>
         <a href="#about">About</a>
         <a href="cv.html">CV</a>
         <a href="projects.html">Projects</a>
         <a href="misc.html">Misc.</a>
     </nav>
-    <img src="media/banner.png" alt="Site Banner" class="banner">
 </header>
 
 <!-- About Section with Profile Photo to the Left -->
@@ -106,13 +111,18 @@
         <h2>About</h2>
         <p>
             Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.
-            
         </p>
     </div>
 </section>
 
+<footer>
+    <p>&copy; 2024 Madi[son] Brown</p>
+    <img src="media/more_mountains.png" alt="More Mountains">
+</footer>
+
 </body>
 </html>
+
 
 </section>
 
