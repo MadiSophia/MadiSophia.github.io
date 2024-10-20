@@ -25,6 +25,22 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .button {
+    display: inline-block;
+    background-color: #2C3E50; /* Dark background color */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding around the text */
+    margin: 5px; /* Margin between buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #34495E; /* Slightly lighter on hover */
+}
+
         ul {
             list-style: none;
             padding-left: 0;
@@ -61,7 +77,12 @@
 <header>
     <h1>Madi[son] Sophia Brown</h1>
     <div class="contact-info">
- <p><a href="mailto:madib98@student.ubc.ca">email</a></p>
+<div class="contact-info">
+    <a href="mailto:madib98@student.ubc.ca" class="button">Email</a>
+    <a href="https://www.linkedin.com/in/madison-s-brown/" target="_blank" class="button">LinkedIn</a>
+    <a href="https://x.com/MadiSophiaBrown" target="_blank" class="button">X</a>
+    <a href="https://www.researchgate.net/profile/Madison-Brown-34" target="_blank" class="button">ResearchGate</a>
+</div>
     </div>
     <nav>
         <a href="index.html">About</a>
