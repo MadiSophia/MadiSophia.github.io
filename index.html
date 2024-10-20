@@ -10,12 +10,12 @@
             margin: 0;
             padding: 0;
             background-color: #c6c3f2;
+            line-height: 1.6;
         }
         header {
-            background-color: #c3ced2;
-            color: #fff;
+            position: relative;
             text-align: center;
-            padding: 0;
+            color: #fff;
         }
         .banner {
             width: 100%;
@@ -23,9 +23,14 @@
             display: block;
         }
         nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
             display: flex;
             justify-content: center;
-            background-color: #8d263c;
+            background-color: rgba(141, 38, 60, 0.7); /* Translucent background */
+            padding: 10px 0;
+            z-index: 1;
         }
         nav a {
             color: white;
@@ -35,57 +40,81 @@
             font-weight: bold;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: rgba(255, 255, 255, 0.2); /* Light translucent hover effect */
         }
         .container {
             max-width: 1000px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 30px;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        h1, h2 {
             color: #333;
             text-align: center;
         }
+        /* Updated profile photo styling */
         .photo {
-            max-width: 150px;
-            border-radius: 50%;
+            max-width: 200px;
+            height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
+            border-radius: 10px; /* Makes the image slightly rounded */
+            border: 2px solid #8d263c; /* Optional border around the image */
         }
         footer {
             text-align: center;
-            margin: 20px 0;
+            padding: 10px;
+            background-color: #c3ced2;
             color: #666;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        #skills, #contact {
+            margin: 40px 0;
+        }
+        .skill-list {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            list-style-type: none;
+        }
+        .skill-list li {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
 <header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="cv.html">CV</a>
+        <a href="projects.html">Projects</a>
+        <a href="misc.html">Misc.</a>
+    </nav>
     <img src="media/banner.png" alt="Site Banner" class="banner">
-    <h1 class="title">Madi[son] Brown</h1>
-    <img src="media/IMG_1046.jpg" alt="Profile Photo" class="photo">
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="cv.html">CV</a>
-    <a href="projects.html">Projects</a>
-    <a href="misc.html">Misc.</a>
-</nav>
+<!-- Moved profile photo outside of header, below navigation -->
+<div class="photo-container">
+    <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's Profile Photo" class="photo">
+</div>
 
 <div class="container">
     <section id="about">
         <h2>About</h2>
         <p>
-           I’m an MSc student in the Integrated Remote Sensing Studio at University of Columbia and my research focuses on characterizing and assessing the impact of Non-stand-replacing disturbances in a a near-real-time context using a combination of Landsat/Sentinel 2 times series and LiDAR.
-
-I’m also a registered Geoscientist- in- training with eligibility to work in both the US and Canada. I like bikes, skis, mountains, travel, and arts + crafts.
-        </p>
+            Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.
+            <br><br>
+            
     </section>
+
 </div>
 
 </body>
 </html>
+
