@@ -1,2 +1,1 @@
-#Personal website
-# Custom templates made
+#Personal website with custom templates
