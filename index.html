@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #c6c3f2;
+            background-color: #e3d8ed; /* Updated background color */
             line-height: 1.6;
         }
         header {
@@ -28,7 +28,7 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            background-color: rgba(141, 38, 60, 0.7); /* Translucent background */
+            background-color: rgba(202, 182, 186, 0.507); /* Translucent background */
             padding: 10px 0;
             z-index: 1;
         }
@@ -42,25 +42,33 @@
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.2); /* Light translucent hover effect */
         }
+        /* Container styling for the About section */
         .container {
             max-width: 1000px;
             margin: 20px auto;
             padding: 30px;
-            background-color: white;
+            background-color: white; /* White background for the container */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Slightly rounded corners */
         }
         h1, h2 {
             color: #333;
             text-align: center;
         }
-        /* Updated profile photo styling */
+        /* Profile photo and about section alignment */
+        .about-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; /* Space between photo and text */
+        }
         .photo {
             max-width: 200px;
             height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px; /* Makes the image slightly rounded */
-            border: 2px solid #8d263c; /* Optional border around the image */
+            border-radius: 10px;
+            border: 2px solid #ffffff;
+        }
+        .about-content {
+            flex-grow: 1;
         }
         footer {
             text-align: center;
@@ -99,19 +107,25 @@
     <img src="media/banner.png" alt="Site Banner" class="banner">
 </header>
 
-<!-- Moved profile photo outside of header, below navigation -->
-<div class="photo-container">
-    <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's Profile Photo" class="photo">
-</div>
-
+<!-- About Section with Profile Photo to the Left -->
 <div class="container">
     <section id="about">
-        <h2>About</h2>
-        <p>
-            Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.
-            <br><br>
+        <div class="about-container">
+            <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's Profile Photo" class="photo">
+            <div class="about-content">
+                <h2>About</h2>
+                <p>
+                    Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.
             
+                </p>
+            </div>
+        </div>
     </section>
+</div>
+
+</body>
+</html>
+
 
 </div>
 
