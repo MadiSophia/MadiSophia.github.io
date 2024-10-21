@@ -26,21 +26,22 @@
         }
         nav {
             position: absolute;
-            bottom: 443px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 15px;
-            background-color: rgba(255, 255, 255, 0.5);
-            padding: 5px 20px;
-            border-radius: 10px;
+            top: 0;
+            left: 0;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            border-radius: 0;
         }
         nav a {
             color: black;
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
+            padding: 10px 15px;
         }
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.2);
@@ -49,22 +50,24 @@
             color: #333;
             text-align: center;
         }
-         .page-title {
+        .page-title {
             position: absolute;
             top: 20px;
             left: 20px;
             font-size: 24px;
-            color: #fff;
+            color: black; /* Change text color to black */
             font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.5); /* Add background for better contrast */
+            background-color: #C3D6FF; /* Match background color with the body */
             padding: 10px 15px;
             border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for contrast */
         }
         .about-container {
             display: flex;
             align-items: flex-start;
             gap: 10px;
-            padding: 30px;
+            padding: 10px; /* Reduce padding if needed */
+            margin-top: -60px; /* Adjust this value to move section up */
             background-color: rgba(195, 214, 255, 0.8);
             border-radius: 10px;
         }
@@ -73,6 +76,7 @@
             height: auto;
             border-radius: 10px;
             border: 2px solid #ffffff;
+            margin-left: auto; /* Move photo to the right */
         }
         .about-content {
             flex-grow: 1;
@@ -93,7 +97,6 @@
 
 <header>
     <img src="media/banner.png" alt="Site Banner" class="banner">
-    <!-- Add the page title here -->
     <div class="page-title">Madi[son] Sophia Brown</div>
     <nav>
         <a href="#about">About</a>
@@ -104,16 +107,20 @@
 </header>
 
 <section id="about" class="about-container">
-    <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's Profile Photo" class="photo">
     <div class="about-content">
         <h2>About</h2>
         <p>Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.</p>
     </div>
+    <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's Profile Photo" class="photo">
 </section>
 
 <footer>
     <img src="media/footer.png" alt="Decorative footer graphic featuring mountains">
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
