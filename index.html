@@ -30,18 +30,24 @@
         .header-content {
             display: flex; /* Use flexbox for header content */
             justify-content: space-between; /* Space between title and nav */
+            align-items: center; /* Center items vertically */
             width: 100%; /* Full width for header content */
             padding: 0 20px; /* Padding for title and nav */
             position: relative;
+        }
+        .page-title {
+            font-size: 24px;
+            color: black;
+            font-weight: bold;
+            margin: 0; /* Remove default margin */
         }
         nav {
             display: flex; /* Keep nav as flexbox */
             gap: 15px;
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 5px 20px;
+            padding: 10px 20px; /* Increased padding for better spacing */
             border-radius: 10px;
-            width: 100%;
-            
+            margin-left: auto; /* Push nav to the right */
         }
         nav a {
             color: black;
@@ -55,12 +61,6 @@
         h1, h2 {
             color: #333;
             text-align: center;
-        }
-        .page-title {
-            font-size: 24px;
-            color: black;
-            font-weight: bold;
-            margin: 0; /* Remove default margin */
         }
         .about-container {
             display: flex;
