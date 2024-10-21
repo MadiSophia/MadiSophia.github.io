@@ -34,7 +34,7 @@
             width: 100%; /* Full width for header content */
             padding: 0 20px; /* Padding for title */
             position: absolute; /* Positioning relative to the banner */
-            top: 20px; /* Adjust as needed */
+            top: 40px; /* Adjusted value to move the title down */
         }
         .page-title {
             font-size: 24px;
@@ -53,7 +53,6 @@
             left: 50%; /* Center horizontally */
             transform: translateX(-50%); /* Center align */
             width: 100%;
-            display: flex; /* Keep nav as flexbox */
             justify-content: center; /* Center the nav links */
         }
         nav a {
@@ -71,6 +70,7 @@
         }
         .about-container {
             display: flex;
+            justify-content: flex-end; /* Align items to the right */
             align-items: flex-start;
             gap: 10px;
             padding: 30px;
@@ -112,7 +112,7 @@
         <h1 class="page-title">Madi[son] Brown</h1> <!-- Page title on the left -->
     </div>
     <nav>
-        <a href="  #about">About</a>
+        <a href="#about">About</a>
         <a href="cv.html">CV</a>
         <a href="projects.html">Projects</a>
         <a href="misc.html">Misc.</a>
@@ -121,20 +121,21 @@
 
 <main>
 <section id="about" class="about-container">
-    <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's profile photo smiling outdoors" class="photo">
     <div class="about-content">
         <h2>About</h2>
         <p>Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.</p>
     </div>
+    <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's profile photo smiling outdoors" class="photo">
 </section>
 </main>
 
 <footer>
     <p>&copy; 2024 Madi[son] Brown. All rights reserved.</p>
-    <p> <a href="https://github.com/MadiSophia" target="_blank">GitHub</a></p>
+    <p><a href="https://github.com/MadiSophia" target="_blank">GitHub</a></p>
 </footer>
 </body>
 </html>
+
 
 
 
