@@ -13,8 +13,8 @@
             line-height: 1.6;
         }
         header {
-            display: flex; /* Use flexbox for header layout */
-            flex-direction: column; /* Stack items vertically */
+            display: flex; 
+            flex-direction: column; 
             position: relative;
             text-align: center;
             color: #fff;
@@ -25,35 +25,35 @@
             object-fit: cover;
             margin-top: 100px;
             margin-bottom: 0px;
-            position: relative; /* For positioning the nav inside */
+            position: relative; 
         }
         .header-content {
-            display: flex; /* Use flexbox for header content */
-            justify-content: flex-start; /* Align title to the left */
-            align-items: center; /* Center items vertically */
-            width: 100%; /* Full width for header content */
-            padding: 0 20px; /* Padding for title */
-            position: absolute; /* Positioning relative to the banner */
-            top: 40px; /* Adjusted value to move the title down */
+            display: flex; 
+            justify-content: flex-start; 
+            align-items: center; 
+            width: 100%; 
+            padding: 0 20px; 
+            position: absolute; 
+            top: 40px; 
         }
         .page-title {
             font-size: 24px;
             color: black;
             font-weight: bold;
-            margin: 0; /* Remove default margin */
+            margin: 0; 
         }
         nav {
-            display: flex; /* Keep nav as flexbox */
+            display: flex; 
             gap: 15px;
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 20px; /* Increased padding for better spacing */
+            padding: 10px 20px; 
             border-radius: 10px;
-            position: absolute; /* Position relative to the banner */
-            top: 360px; /* Move navigation lower */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Center align */
+            position: absolute; 
+            top: 360px; 
+            left: 50%; 
+            transform: translateX(-50%); 
             width: 100%;
-            justify-content: center; /* Center the nav links */
+            justify-content: center; 
         }
         nav a {
             color: black;
@@ -70,9 +70,8 @@
         }
         .about-container {
             display: flex;
-            justify-content: flex-end; /* Align items to the right */
-            align-items: flex-start; /* Align items to the top */
-            gap: 10px;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
             padding: 30px;
             background-color: rgba(195, 214, 255, 0.8);
             border-radius: 10px;
@@ -82,11 +81,11 @@
             height: auto;
             border-radius: 10px;
             border: 2px solid #ffffff;
-            margin-top: 70px; /* Move photo up */
-            margin-right: 100px; /* Move photo to the right */
+            margin-bottom: 20px; /* Add space below the photo */
         }
         .about-content {
             flex-grow: 1;
+            text-align: center; /* Center text in about-content */
         }
         footer {
             text-align: center;
@@ -101,7 +100,6 @@
 
         @media (max-width: 600px) {
             .about-container {
-                flex-direction: column;
                 align-items: center;
             }
         }
@@ -111,7 +109,8 @@
 <header>
     <img src="media/banner.png" alt="A scenic view of Vancouver, BC" class="banner">
     <div class="header-content">
-        <h1 class="page-title">Madi[son] Brown</h1> <!-- Page title on the left -->
+        <h1 class="page-title">Madi[son] Brown</h1> 
+        <p>Hi! Geospatial & Data Scientist </p>
     </div>
     <nav>
         <a href="#about">About</a>
@@ -122,13 +121,13 @@
 </header>
 
 <main>
-<section id="about" class="about-container">
-    <div class="about-content">
-        <h2>About</h2>
-        <p>Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.</p>
-    </div>
-    <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's profile photo smiling outdoors" class="photo">
-</section>
+    <section id="about" class="about-container">
+        <img src="media/IMG_1046.jpg" alt="Madi[son] Brown's profile photo smiling outdoors" class="photo">
+        <div class="about-content">
+            <h2>About</h2>
+            <p>Hi! I'm a geospatial scientist currently located in Vancouver, BC, Canada.</p>
+        </div>
+    </section>
 </main>
 
 <footer>
