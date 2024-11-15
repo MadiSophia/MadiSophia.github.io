@@ -16,63 +16,64 @@
         h1, h2, h3 {
             color: #2C3E50;
         }
-        .contact-info {
-            font-size: 1.2em;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .button {
-            display: inline-block;
-            background-color: #E6E6FA; /* lilac */
-            color: black; /* Black text */
-            padding: 8px 10px; /* Padding around the text */
-            margin: 4px; /* Margin between buttons */
-            border-radius: 4px; /* Rounded corners */
-            text-decoration: none; /* Remove underline */
-            font-weight: bold; /* Bold text */
-            transition: background-color 0.3s; /* Smooth transition for hover effect */
-        }
-        .button:hover {
-            background-color: #34495E; /* Slightly lighter on hover */
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(255, 255, 255, 0.5); /* Light translucent background for nav */
-            padding: 3px 0; /* Reduced padding for top and bottom */
-            max-width: 1000px; /* Set a maximum width for the navigation */
-            margin: 0 auto; /* Center the navigation */
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 3px 0;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         nav a {
-            color: black; /* Change text color to black */
-            padding: 10px 15px; /* Reduced padding for links */
+            color: black;
+            padding: 10px 15px;
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
         }
         nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2); /* Light translucent hover effect */
+            background-color: rgba(255, 255, 255, 0.2);
         }
-        .coming-soon {
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .button-card {
+            width: 200px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            font-size: 2em; /* Larger font size for emphasis */
-            margin-top: 50px; /* Space above the text */
+            background-color: #E6E6FA;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+        .button-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .button-image {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .button-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -85,13 +86,25 @@
         <a href="projects.html">Projects</a>
         <a href="misc.html">Misc.</a>
     </nav>
-    <h1>Madi[son]  Brown</h1>
+    <h1>Madi[son] Brown</h1>
 </header>
 
 <main>
-    <div class="coming-soon">Coming Soon</div>
+    <div class="button-container">
+        <a href="research.html" class="button-card">
+            <img src="research.jpg" alt="Research" class="button-image">
+            <div class="button-title">Research</div>
+        </a>
+        <a href="environmental-education.html" class="button-card">
+            <img src="environmental-education.jpg" alt="Environmental Education" class="button-image">
+            <div class="button-title">Environmental Education</div>
+        </a>
+        <a href="fun.html" class="button-card">
+            <img src="fun.jpg" alt="Fun" class="button-image">
+            <div class="button-title">Fun</div>
+        </a>
+    </div>
 </main>
 
 </body>
 </html>
-
