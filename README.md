@@ -1,1 +1,2 @@
-#Personal website with custom templates
+#Created my own personalized website
+#all art is my own 
