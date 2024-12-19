@@ -1,3 +1,2 @@
-#Created my own personalized website
-
-# All art is mine:)
+# My personalized website built from scratch
+# All art is my own 
