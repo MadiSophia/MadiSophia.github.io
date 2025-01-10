@@ -13,63 +13,41 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0; /* Remove margin for full-page layout */
-            padding: 0; /* Remove padding */
+            margin: 0;
+            padding: 0;
             line-height: 1.8;
             color: #333;
-            background-image: url('media/floral_paper.png'); /* Background image */
-            background-size: cover; /* Scale the image to cover the entire page */
-            background-position: center center; /* Center the image */
-            background-repeat: no-repeat; /* Prevent repeating the image */
-            height: 100vh; /* Ensure the body takes the full height of the viewport */
-            overflow: hidden; /* Prevent scrolling if the image is large */
+            background-image: url('media/floral_paper.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
         }
         h1, h2, h3 {
-            color: #2C3E50; /* Dark blue for headings */
+            color: #2C3E50;
             font-weight: bold;
         }
         h1 {
-            font-size: 2.5em; /* Larger size for main heading */
+            font-size: 2.5em;
         }
         h2 {
-            font-size: 1.8em; /* Slightly smaller subheadings */
+            font-size: 1.8em;
         }
         p {
-            font-size: 1.1em; /* Slightly larger paragraph text for readability */
+            font-size: 1.1em;
             line-height: 1.8;
             margin-bottom: 20px;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .button {
-            display: inline-block;
-            background-color: #E6E6FA; /* Lilac button */
-            color: black;
-            padding: 8px 10px;
-            margin: 4px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #34495E;
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
         }
         header {
             text-align: center;
             margin-bottom: 20px;
+        }
+        header h1 {
+            background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
+            padding: 10px;
+            border-radius: 8px; /* Optional rounded corners */
+            display: inline-block; /* Ensures background wraps around text */
         }
         nav {
             display: flex;
@@ -88,6 +66,14 @@
         }
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .blog-box {
@@ -142,4 +128,3 @@
     </div>
 </body>
 </html>
-
