@@ -35,24 +35,46 @@
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
-        .blog-page {
-            padding: 50px;
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .button-card {
+            width: 200px;
+            height: 250px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-        .blog-post {
-            background-color: white;
-            padding: 20px;
-            margin: 20px 0;
+            text-align: center;
+            background-color: #E6E6FA;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
-            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
         }
-        .blog-post h2 {
-            margin-top: 0;
+        .button-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .button-image {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .button-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -63,21 +85,24 @@
         <a href="index.html">About</a>
         <a href="cv.html">CV</a>
         <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
+        <a href="misc.html">Misc.</a>
     </nav>
     <h1>Madi[son] Brown</h1>
 </header>
 
-<main class="blog-page">
-    <article class="blog-post">
-        <h2>Welcome to My Blog</h2>
-        <p>Stay tuned for updates about my research, adventures, and more!</p>
-    </article>
-    <article class="blog-post">
-        <h2>First Post: My Journey in Remote Sensing</h2>
-        <p>Remote sensing has been a fascinating field that allows us to explore and understand our environment from afar. I'll share insights from my work and research here.</p>
-    </article>
+<main>
+    <div class="button-container">
+        <a href="research.html" class="button-card">
+            <img src="media/research.jpg" alt="Research" class="button-image">
+            <div class="button-title">Research</div>
+        </a>
+        <a href="environmental-education.html" class="button-card">
+            <img src="media/environmental-education.jpg" alt="Environmental Education" class="button-image">
+            <div class="button-title">Environmental Education</div>
+        </a>
+        <a href="blog.html" class="button-card">
+            <img src="media/fun.jpg" alt="Blog" class="button-image">
+            <div class="button-title">Fun</div>
+        </a>
+    </div>
 </main>
-
-</body>
-</html>
