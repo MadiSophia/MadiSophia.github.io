@@ -5,19 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
     <style>
+        <link rel="icon" type="image/svg+xml" href="media/icon.svg">
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: url('/mnt/data/floral_paper.png') no-repeat center center fixed;
-            background-size: cover;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: rgba(195, 214, 255, 1);
+        }
+        h1, h2, h3 {
+            color: #2C3E50;
+        }
+        .contact-info {
+            font-size: 1.2em;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            background-color: #E6E6FA; /* lilac */
+            color: black; /* Black text */
+            padding: 8px 10px; /* Padding around the text */
+            margin: 4px; /* Margin between buttons */
+            border-radius: 4px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Bold text */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        .button:hover {
+            background-color: #34495E; /* Slightly lighter on hover */
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.5); /* Light translucent background for nav */
+            padding: 3px 0; /* Reduced padding for top and bottom */
+            max-width: 1000px; /* Set a maximum width for the navigation */
+            margin: 0 auto; /* Center the navigation */
+        }
+        nav a {
+            color: black; /* Change text color to black */
+            padding: 10px 15px; /* Reduced padding for links */
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light translucent hover effect */
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
+        
 
         .blog-box {
             background-color: white;
@@ -56,17 +109,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
         </div>
         <div class="blog-box">
-            <a href="/blogs/blog2.html">
-                <h2>Blog Title 2</h2>
-            </a>
-            <p>Morbi non arcu risus quis varius quam quisque id diam. Sed nisi lacus sed viverra tellus in hac habitasse platea dictumst.</p>
-        </div>
-        <div class="blog-box">
-            <a href="/blogs/blog3.html">
-                <h2>Blog Title 3</h2>
-            </a>
-            <p>Ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Praesent semper feugiat nibh sed pulvinar.</p>
-        </div>
+
     </div>
 </body>
 </html>
