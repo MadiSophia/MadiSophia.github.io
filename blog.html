@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog </title>
+    <title>Blog Page</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: url('floral_paper.png') no-repeat center center fixed;
+            background: url('/mnt/data/floral_paper.png') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -36,23 +36,37 @@
         .blog-box p {
             line-height: 1.6;
         }
+
+        .blog-box a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .blog-box a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="blog-box">
-            <h2>Blog Title 1</h2>
+            <a href="/blogs/blog1.html">
+                <h2>Blog Title 1</h2>
+            </a>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
         </div>
         <div class="blog-box">
-            <h2>Blog Title 2</h2>
+            <a href="/blogs/blog2.html">
+                <h2>Blog Title 2</h2>
+            </a>
             <p>Morbi non arcu risus quis varius quam quisque id diam. Sed nisi lacus sed viverra tellus in hac habitasse platea dictumst.</p>
         </div>
         <div class="blog-box">
-            <h2>Blog Title 3</h2>
+            <a href="/blogs/blog3.html">
+                <h2>Blog Title 3</h2>
+            </a>
             <p>Ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Praesent semper feugiat nibh sed pulvinar.</p>
         </div>
     </div>
 </body>
 </html>
-
