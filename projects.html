@@ -69,12 +69,14 @@
             border-radius: 10px 10px 0 0;
         }
         .button-title {
-            font-size: 1.2em;
+            font-size: 0.8em;          /* Smaller title text */
             font-weight: bold;
-            padding: 10px;
+            padding: 8px;              /* Less padding */
             background-color: rgba(255, 255, 255, 0.8);
             width: 100%;
             text-transform: uppercase;
+            line-height: 1.2;          /* Tighter line spacing */
+            word-wrap: break-word;     /* Wrap text nicely */
         }
     </style>
 </head>
@@ -94,10 +96,9 @@
     <div class="button-container">
         <a href="research.html" class="button-card">
             <img src="media/research.jpg" alt="Research" class="button-image">
-            <div class="button-title">Detecting and characterizing non-stand replacing disturbances using medium-resolution satellite 
-                imagery and light detection and ranging (LiDAR) in a continuous context 
- 
-</div>
+            <div class="button-title">
+                Detecting and characterizing non-stand replacing disturbances using medium-resolution satellite imagery and light detection and ranging (LiDAR) in a continuous context
+            </div>
         </a>
         <a href="environmental-education.html" class="button-card">
             <img src="media/environmental-education.jpg" alt="Environmental Education" class="button-image">
@@ -109,3 +110,7 @@
         </a>
     </div>
 </main>
+
+</body>
+</html>
+
