@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Madi[son] Brown - Multi-disciplinary geospatial scientist based in Vancouver, BC, specializing in remote sensing and environmental research.">
-    <title>Madi[son] Brown</title>
+    <meta name="description" content="Projects and publications by Madi[son] Brown.">
+    <title>Projects | Madi[son] Brown</title>
+
     <link rel="icon" type="image/svg+xml" href="media/icon.svg">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,17 +16,20 @@
             color: #333;
             background-color: rgba(195, 214, 255, 1);
         }
+
         h1, h2, h3 {
             color: #2C3E50;
         }
+
         nav {
             display: flex;
             justify-content: center;
             background-color: rgba(255, 255, 255, 0.5);
             padding: 3px 0;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 0 auto 30px auto;
         }
+
         nav a {
             color: black;
             padding: 10px 15px;
@@ -32,9 +37,11 @@
             text-transform: uppercase;
             font-weight: bold;
         }
+
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
+
         .button-container {
             display: flex;
             justify-content: center;
@@ -42,9 +49,10 @@
             flex-wrap: wrap;
             margin-top: 40px;
         }
+
         .button-card {
-            width: 260px;       /* bigger width */
-            height: 320px;      /* bigger height */
+            width: 260px;
+            height: 320px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -58,28 +66,66 @@
             text-decoration: none;
             color: inherit;
         }
+
         .button-card:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
+
         .button-image {
             width: 100%;
             height: 70%;
             object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
+
         .button-title {
-            font-size: 0.7em;   /* smaller font */
+            font-size: 0.7em;
             font-weight: bold;
-            padding: 6px;       /* slightly less padding */
+            padding: 6px;
             background-color: rgba(255, 255, 255, 0.8);
             width: 100%;
             text-transform: uppercase;
             line-height: 1.2;
-            word-wrap: break-word;
+        }
+
+        /* Paper cards (no images) */
+        .paper-card {
+            width: 260px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #F8F9FA;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-decoration: none;
+            color: #2C3E50;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .paper-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .paper-title {
+            font-size: 0.85em;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .paper-meta {
+            font-size: 0.75em;
+            margin-top: 12px;
+            color: #555;
+            font-style: italic;
         }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -94,21 +140,43 @@
 
 <main>
     <div class="button-container">
-        <!-- Research button now uses GIF -->
+
+        <!-- Research overview -->
         <a href="research.html" class="button-card">
-            <img src="media/Silva21.gif" alt="Research - Non-stand replacing disturbances" class="button-image">
+            <img src="media/Silva21.gif" alt="Research overview" class="button-image">
             <div class="button-title">
                 Detecting and characterizing non-stand replacing disturbances using medium-resolution satellite imagery and LiDAR in a continuous context
             </div>
         </a>
-        <a href="environmental-education.html" class="button-card">
-            <img src="media/environmental-education.jpg" alt="Environmental Education" class="button-image">
-            <div class="button-title">Environmental Education</div>
+
+        <!-- Paper 1 -->
+        <a href="detecting.html" class="paper-card">
+            <div class="paper-title">
+                Detection of non-stand replacing disturbances (NSR) using harmonized Landsat–Sentinel-2 time series
+            </div>
+            <div class="paper-meta">
+                Brown et al. (2024)<br>
+                ISPRS Journal of Photogrammetry and Remote Sensing
+            </div>
         </a>
+
+        <!-- Paper 2 -->
+        <a href="characterizing.html" class="paper-card">
+            <div class="paper-title">
+                Characterizing the impact of non-stand replacing disturbances on LiDAR-based forest structure using a Harmonized Landsat–Sentinel-2 time-series
+            </div>
+            <div class="paper-meta">
+                Brown et al. (2025)<br>
+                Manuscript under review
+            </div>
+        </a>
+
+        <!-- Blog -->
         <a href="blog.html" class="button-card">
             <img src="media/fun.jpg" alt="Blog" class="button-image">
             <div class="button-title">Blog</div>
         </a>
+
     </div>
 </main>
 
