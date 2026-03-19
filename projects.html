@@ -75,52 +75,22 @@
         .button-image {
             width: 100%;
             height: 70%;
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
+            object-fit: contain; /* FIXED: shows full image */
+            background-color: #E6E6FA;
+        }
+
+        .salmon-img {
+            padding: 10px;
         }
 
         .button-title {
-            font-size: 0.7em;
+            font-size: 0.75em;
             font-weight: bold;
-            padding: 6px;
+            padding: 8px;
             background-color: rgba(255, 255, 255, 0.8);
             width: 100%;
             text-transform: uppercase;
             line-height: 1.2;
-        }
-
-        .paper-card {
-            width: 260px;
-            height: 320px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            background-color: #F8F9FA;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-decoration: none;
-            color: #2C3E50;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .paper-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .paper-title {
-            font-size: 0.85em;
-            font-weight: bold;
-            line-height: 1.4;
-        }
-
-        .paper-meta {
-            font-size: 0.75em;
-            margin-top: 12px;
-            color: #555;
-            font-style: italic;
         }
     </style>
 </head>
@@ -139,49 +109,25 @@
 
 <main>
     <div class="button-container">
-
-        <!-- Research overview -->
-        <a href="research.html" class="button-card">
-            <img src="media/Silva21.gif" alt="Research overview" class="button-image">
+ <!-- MSc Thesis -->
+        <a href="https://dx.doi.org/10.14288/1.0449328" class="button-card" target="_blank">
+            <img src="media/Silva21.gif" alt="MSc Thesis" class="button-image">
             <div class="button-title">
-                Detecting and characterizing non-stand replacing disturbances using medium-resolution satellite imagery and LiDAR in a continuous context
+                MSc Research – LiDAR & Satellite Based Continuous Forest Inventories
             </div>
+            <!-- Super Salmon -->
+        <a href="https://github.com/MadiSophia/SuperSalmon" class="button-card" target="_blank">
+            <img src="media/Salmon (3).png" alt="Super Salmon R tutorial" class="button-image salmon-img">
+            <div class="button-title">Super Salmon- Beginer R tutorial</div>
         </a>
-
-        <!-- Paper 1 -->
-        <a href="detecting.html" class="paper-card">
-            <div class="paper-title">
-                Detection of non-stand replacing disturbances (NSR) using harmonized Landsat–Sentinel-2 time series
-            </div>
-            <div class="paper-meta">
-                Brown et al. (2024)<br>
-                ISPRS Journal of Photogrammetry and Remote Sensing
-            </div>
         </a>
-
-        <!-- Paper 2 -->
-        <a href="characterizing.html" class="paper-card">
-            <div class="paper-title">
-                Characterizing the impact of non-stand replacing disturbances on LiDAR-based forest structure using a Harmonized Landsat–Sentinel-2 time-series
-            </div>
-            <div class="paper-meta">
-                Brown et al. (2025)<br>
-                Manuscript under review
-            </div>
-        </a>
-
         <!-- Blog -->
         <a href="blog.html" class="button-card">
             <img src="media/fun.jpg" alt="Blog" class="button-image">
             <div class="button-title">Blog</div>
         </a>
 
-        <!-- Super Salon (R tutorial) -->
-        <a href="https://github.com/MadiSophia/SuperSalmon" class="button-card" target="_blank">
-            <img src="media/Salmon (3).png" alt="Super Salon R tutorial" class="button-image">
-            <div class="button-title">Super Salon</div>
-        </a>
-
+        
     </div>
 </main>
 
